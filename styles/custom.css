@@ -1,17 +1,5 @@
-:root {
-  --blue: #007bff;
-  --indigo: #6610f2;
-  --primary: red !important;
-  $primary: red;
-  --text-primary: pink !important;
-}
-
-body {
-  /*background-color: #37384e;*/
-}
-
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   height: 60px;
