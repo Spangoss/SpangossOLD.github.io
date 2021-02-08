@@ -1,3 +1,7 @@
+: root {
+  --teal: #09B0B2;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -8,8 +12,4 @@
 
 .navbar-toggler {
   border: none;
-}
-
-.grid-item {
-  padding: 1rem;
 }
