@@ -13,3 +13,7 @@
 .navbar-toggler {
   border: none;
 }
+
+.card {
+  border: red;
+}
