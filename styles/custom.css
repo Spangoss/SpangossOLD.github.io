@@ -1,5 +1,10 @@
 : root {
   --teal: #09B0B2;
+  --seconday: #6c757d;
+}
+
+body {
+  background-color: #000;
 }
 
 .footer {
