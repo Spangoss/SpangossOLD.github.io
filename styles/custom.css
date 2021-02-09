@@ -2,6 +2,11 @@ body {
   background-color: #000 !important;
 }
 
+.cover-page {
+  background-size: cover !important;
+  background-image: url(../images/background.jpg) !important;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -16,4 +21,8 @@ body {
 
 .construction-container {
   padding: 20rem 0;
+}
+
+.heart {
+  height: 40rem;
 }
