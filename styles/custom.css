@@ -2,9 +2,12 @@ body {
   background-color: #000 !important;
 }
 
-.cover-page {
-  background-size: cover contain;
-  background-image: url(../images/background.jpg) !important;
+body.cover-page {
+  background: url(../images/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .footer {
