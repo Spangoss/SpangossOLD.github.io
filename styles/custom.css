@@ -3,7 +3,7 @@ body {
 }
 
 .cover-page {
-  background-size: cover !important;
+  background-size: cover contain;
   background-image: url(../images/background.jpg) !important;
 }
 
