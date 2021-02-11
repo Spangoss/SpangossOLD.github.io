@@ -2,6 +2,10 @@ body {
   background-color: #000 !important;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 body.cover-page {
   background: url(../images/background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
