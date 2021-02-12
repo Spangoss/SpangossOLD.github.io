@@ -1,9 +1,20 @@
+:root {
+  --pink: #BF1D90;
+  --light-pink: #E77FC9;
+  --teal: #09B0B2;
+}
+
 body {
   background-color: #000 !important;
 }
 
 a {
   text-decoration: none !important;
+  color: var(--teal);
+}
+
+a:hover {
+  color: teal;
 }
 
 .footer {
