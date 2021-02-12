@@ -6,14 +6,6 @@ a {
   text-decoration: none !important;
 }
 
-body.cover-page {
-  background: url(../images/background.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 .footer {
   position: absolute;
   bottom: 0;
@@ -26,12 +18,24 @@ body.cover-page {
   border: none;
 }
 
+/* index */
+body.cover-page {
+  background: url(../images/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .construction-container {
   padding: 20rem 0;
 }
 
-.heart {
-  height: 40rem;
+/* blog */
+/* erik */
+/* stuff */
+/* things */
+/* blog-pages */
+.avatar {
+  width: 2.8rem;
 }
-
-.card-link {}
