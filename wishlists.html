@@ -19,9 +19,9 @@
   <link href="styles/pdh.css" rel="stylesheet">
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="pdh-favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="pdh-favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="psh-favicon/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
 </head>
@@ -31,7 +31,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark pdh-navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="pdh.html">
+      <a class="navbar-brand mx-3" href="pdh.html">
         <img src="images/pdh-logo.png" alt="" height="40">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,8 +50,18 @@
           </li>
         </ul>
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="login.html"><i class="fa fa-user-circle-o"></i> Login</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-user-circle-o"></i>
+              User Name
+            </a>
+            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item text-muted" href="users.html">Manage Users</a></li>
+              <li><a class="dropdown-item text-muted" href="to-do.html">To-do</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item text-muted" href="login.html">Log out</a></li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -65,7 +75,7 @@
 
         <!-- Content -->
         <div class="row">
-          <h1 class="text-light pb-2">Wishlists</h1>
+          <h1 class="text-light mt-4">Wishlists</h1>
           <p class="text-muted">Content...</p>
         </div>
       </div>
