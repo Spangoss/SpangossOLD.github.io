@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Title</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="styles/custom.css" rel="stylesheet">
+  <link href="styles/pdh.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark pdh-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand mx-3" href="pdh.html">
+        <img src="images/pdh-logo.png" alt="" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mx-5" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://discord.com/"><i class="fab fa-discord"></i> Discord</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="wishlists.html">Wishlists</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="honds.html">Honds</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-user-circle-o"></i>
+              User Name
+            </a>
+            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item text-muted" href="users.html">Manage Users</a></li>
+              <li><a class="dropdown-item text-muted" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item text-muted" href="#">Log out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <!-- Content -->
+        <div class="row pt-5 text-muted">
+          <h2 class="mb-4">Steven's To-do List</h2>
+          <ul class="list-group">
+            <li class="list-group-item bg-dark"><i class="fa fa-circle-o"></i> Set of items in a database</li>
+            <li class="list-group-item bg-dark"><i class="fa fa-circle-o"></i> Bosses associated to items</li>
+            <li class="list-group-item bg-dark"><i class="fa fa-circle-o"></i> Raids associated to bosses</li>
+            <li class="list-group-item bg-dark"><i class="fa fa-circle-o"></i> Wishlist signup page</li>
+            <li class="list-group-item bg-dark text-success"><i class="fa fa-check-circle-o"></i> List of all raiders and auto generate usernames and passwords accordingly</li>
+            <li class="list-group-item bg-dark"><i class="fa fa-circle-o"></i> Current phase amount of wishlist to set</li>
+            <li class="list-group-item bg-dark"><i class="fa fa-circle-o"></i> Caching to previous and current phases?</li>
+            <li class="list-group-item bg-dark"><i class="fa fa-circle-o"></i> Ability to change a wishlist before it is locked</li>
+            <li class="list-group-item bg-dark"><i class="fa fa-circle-o"></i> Lock a wishlist / All Wishlists</li>
+            <li class="list-group-item bg-dark text-success"><i class="fa fa-check-circle-o"></i> Admin accounts to be set</li>
+            <li class="list-group-item bg-dark text-success"><i class="fa fa-check-circle-o"></i> Admin visibility</li>
+            <li class="list-group-item bg-dark"><i class="fa fa-circle-o"></i> Ability to support multiple file uploads</li>
+            <li class="list-group-item bg-dark"><i class="fa fa-circle-o"></i> Edit wishlist items</li>
+            <li class="list-group-item bg-dark"><i class="fa fa-circle-o"></i> Generating wishlist for wow</li>
+            <li class="list-group-item bg-dark"><i class="fa fa-circle-o"></i> Download location for current copy of addon</li>
+            <li class="list-group-item bg-dark"><i class="fa fa-circle-o"></i> Support areas for people to research wishlist items</li>
+            <li class="list-group-item bg-dark"><i class="fa fa-circle-o"></i> Hover over display of items?</li>
+            <li class="list-group-item bg-dark"><i class="fa fa-circle-o"></i> Ability to upload your changed wishlist after a raid</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted text-center"><small><i class="fa fa-code"></i> Code by Spangoss ©2021</small></p>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap javascript. Load after page for performance -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  <!-- Font Awesome Icons. Load after page for performance -->
+  <script src="https://kit.fontawesome.com/7d48f70d81.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
