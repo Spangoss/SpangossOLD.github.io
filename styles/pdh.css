@@ -58,5 +58,39 @@
 .btn-pdh:hover {
   color: #fff;
   background-color: #BF1D90;
-  border-color: #BF1D90;
+  border: 1px solid #dee2e6;
+}
+
+.page-link {
+  color: #6c757d;
+  background-color: black;
+  border: 1px solid #373b3e;
+}
+
+.page-link:hover {
+  color: white;
+  background-color: var(--pink-dark);
+  border: 1px solid #373b3e;
+}
+
+.table-pdh thead {
+  background-color: #212529;
+  border: 1px solid #373b3e;
+}
+
+.table-pdh {
+  /*--bs-table-bg: black; */
+  --bs-table-striped-bg: #212529;
+  --bs-table-striped-color: #6c757d;
+  --bs-table-active-bg: var(--pink-dark);
+  --bs-table-active-color: white;
+  --bs-table-hover-bg: var(--pink-dark);
+  --bs-table-hover-color: white;
+  color: #6c757d;
+  border: 1px solid #373b3e;
+}
+
+.bg-dark {
+  background-color: black !important;
+  border-color: #373b3e !important;
 }
