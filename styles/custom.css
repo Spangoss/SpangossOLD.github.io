@@ -4,7 +4,14 @@
   --teal: #09B0B2;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
   background-color: #000 !important;
 }
 
@@ -25,8 +32,8 @@ a:hover {
   position: absolute;
   bottom: 0;
   width: 100%;
+  /* Set the fixed height of the footer here */
   height: 60px;
-  line-height: 60px;
 }
 
 .navbar-toggler {

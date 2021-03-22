@@ -100,10 +100,20 @@
   width: 1.7rem;
 }
 
+.raid-icon {
+  height: 1.7rem;
+  width: 1.7rem;
+}
+
 .stretched-link {
   color: inherit;
 }
 
 .stretched-link:hover {
   color: white;
+}
+
+.dropdown-divider {
+  opacity: 1;
+  color: #373b3e;
 }
