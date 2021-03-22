@@ -61,6 +61,20 @@
   border: 1px solid #dee2e6;
 }
 
+.home-page-img:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url('../images/burning-crusade-sm.jpg');
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: opacity(0.3) grayscale(60%) blur(2px);
+}
+
 .page-link {
   color: #6c757d;
   background-color: black;
@@ -90,9 +104,8 @@
   border: 1px solid #373b3e;
 }
 
-.bg-dark {
+.bg-black {
   background-color: black !important;
-  border-color: #373b3e !important;
 }
 
 .class-icon {
@@ -116,4 +129,12 @@
 .dropdown-divider {
   opacity: 1;
   color: #373b3e;
+}
+
+.social-link {
+  color: #6c757d;
+}
+
+.social-link:hover {
+  color: white;
 }
