@@ -99,3 +99,11 @@
   height: 1.7rem;
   width: 1.7rem;
 }
+
+.stretched-link {
+  color: inherit;
+}
+
+.stretched-link:hover {
+  color: white;
+}
