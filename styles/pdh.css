@@ -2,6 +2,7 @@
   --pink: #BF1D90;
   --pink-light: #E77FC9;
   --pink-dark: #93166F;
+  --pink-darkest: #670F4E;
   --teal: #09B0B2;
 }
 
@@ -51,14 +52,18 @@
 
 .btn-pdh {
   color: #fff;
-  background-color: #93166F;
-  border-color: #93166F;
+  background-color: var(--pink-dark);
+  border-color: var(--pink-dark);
 }
 
 .btn-pdh:hover {
   color: #fff;
-  background-color: #BF1D90;
-  border: 1px solid #dee2e6;
+  background-color: var(--pink-darkest);
+  border-color: var(--pink-darkest);
+}
+
+.btn-pdh.focus, .btn-pdh:focus {
+  box-shadow: 0 0 0 0.2rem rgb(147 22 111 / 50%);
 }
 
 .home-page-img:before {
