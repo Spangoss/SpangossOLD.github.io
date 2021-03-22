@@ -94,3 +94,8 @@
   background-color: black !important;
   border-color: #373b3e !important;
 }
+
+.class-icon {
+  height: 1.7rem;
+  width: 1.7rem;
+}
