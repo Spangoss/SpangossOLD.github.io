@@ -29,7 +29,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg mb-3 navbar-dark bg-dark pdh-navbar">
+  <nav class="navbar navbar-expand-lg mb-3 navbar-dark bg-black pdh-navbar">
     <div class="container-fluid">
       <a class="navbar-brand mx-3" href="pdh.html">
         <img src="images/pdh-logo.png" alt="" height="40">
@@ -37,31 +37,28 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse mx-5" id="navbarNav">
+      <div class="collapse navbar-collapse mx-3" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="https://discord.com/"><i class="fab fa-discord"></i> Discord</a>
-          </li>
-          <li class="nav-item">
+          <li class="nav-item mx-3">
             <a class="nav-link" href="wishlists.html">Wishlists</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="honds.html">Honds</a>
+          <li class="nav-item mx-3">
+            <a class="nav-link active" aria-current="page" href="honds.html"></i>Honds</a>
           </li>
-
         </ul>
         <ul class="navbar-nav ms-auto">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-user-circle-o"></i>
               User Name
             </a>
-            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item text-muted" href="users.html">Manage Users</a></li>
+            <ul class="dropdown-menu bg-black" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item text-muted" href="users.html"></i>Users</a></li>
+              <li><a class="dropdown-item text-muted" href="raids.html"></i>Raids</a></li>
               <li><a class="dropdown-item text-muted" href="to-do.html">To-do</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item text-muted" href="login.html">Log out</a></li>
+              <li><a class="dropdown-item text-muted" href="login.html"><i class="fas fa-sign-out-alt"></i> Log out</a></li>
             </ul>
           </li>
         </ul>
@@ -70,25 +67,161 @@
   </nav>
 
   <!-- Content -->
-  <div class="container text-muted">
-    <div class="row justify-content-center">
-      <div class="col">
-        <h3 class="text-pdh">Honds</h3>
-        <p class="text-muted">Content...</p>
+  <div class="container text-muted px-4">
+    <!-- High Council -->
+    <h3 class="text-pdh mb-4">High Council</h3>
+    <div class="row">
+      <div class="col-lg-4 col-sm-6">
+        <div class="card bg-dark mb-4">
+          <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa fa-crown text-warning"></i> Jawn</h5>
+            <p class="card-text">Our beloved Guild Master: Jawn .</p>
+
+            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+              Tooltip on top
+            </button>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="card bg-dark mb-4">
+          <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Axgor</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="card bg-dark mb-4">
+          <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa fa-heart text-danger"></i> Kriegspyre</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="card bg-dark mb-4">
+          <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Shadowclaw</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="card bg-dark mb-4">
+          <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Tcepsa</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Council -->
+    <div class="row">
+      <h3 class="text-pdh mb-4">Council</h3>
+      <div class="col-lg-3 col-sm-6">
+        <div class="card bg-dark mb-4">
+          <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Boneheaded</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="card bg-dark mb-4">
+          <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Darumo</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="card bg-dark mb-4">
+          <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Erikjugend</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="card bg-dark mb-4">
+          <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Littletoes</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="card bg-dark mb-4">
+          <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Nevets</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="card bg-dark mb-4">
+          <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Spangoss</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="card bg-dark mb-4">
+          <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Tiberious</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="card bg-dark mb-4">
+          <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Viper</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="card bg-dark mb-4">
+          <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Volusba</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p class="text-muted text-center"><small><i class="fa fa-code"></i> Code by Spangoss ©2021</small></p>
+  <footer>
+    <div class="footer">
+      <p class="text-muted text-center"><small><i class="fa fa-code"></i> Code by Spangoss ©2021</small><a href="https://discord.com/" class="social-link float-end mx-5"><i class="fab fa-discord fa-2x"></i></a></p>
     </div>
   </footer>
 
 
   <!-- Bootstrap javascript. Load after page for performance -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
 
   <!-- Font Awesome Icons. Load after page for performance -->
   <script src="https://kit.fontawesome.com/7d48f70d81.js" crossorigin="anonymous"></script>
