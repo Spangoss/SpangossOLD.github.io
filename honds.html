@@ -83,7 +83,7 @@
 
             <p>
               Hover the link to see the
-              <a href="#" data-mdb-toggle="tooltip" title="Hi! I'm tooltip">tooltip</a>
+              <a href="#" data-bs-toggle="tooltip" title="Hi! I'm tooltip">tooltip</a>
             </p>
 
           </div>
@@ -231,6 +231,15 @@
 
   <!-- Custom Scripts -->
   <script src="scripts/initalize-popper.js"></script>
+
+
+
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
 
 
 </body>
