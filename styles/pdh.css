@@ -74,11 +74,11 @@
   right: 0;
   z-index: -1;
   display: block;
-  background-image: url('../images/burning-crusade-sm.jpg');
+  background-image: url('../images/burning-crusade-2.png');
   width: 100%;
   height: 100%;
   background-size: cover;
-  filter: opacity(0.3) grayscale(60%) blur(2px);
+  filter: opacity(0.6) grayscale(20%);
 }
 
 .welcome-name {
