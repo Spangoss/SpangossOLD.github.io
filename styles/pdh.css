@@ -66,6 +66,7 @@
   box-shadow: 0 0 0 0.2rem rgb(147 22 111 / 50%);
 }
 
+/* Home page */
 .home-page-img:before {
   content: "";
   position: fixed;
@@ -78,6 +79,10 @@
   height: 100%;
   background-size: cover;
   filter: opacity(0.3) grayscale(60%) blur(2px);
+}
+
+.welcome-name {
+  font-weight: 700;
 }
 
 .page-link {
