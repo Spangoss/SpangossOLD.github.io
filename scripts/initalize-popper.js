@@ -21,3 +21,10 @@ var raidLeaderEl = document.getElementById('raid-leader-icon')
 var rlTooltip = new bootstrap.Tooltip(raidLeaderEl, {
 	container: 'i'
 })
+
+
+// Fix positioning of Popper on Guild Rank Icon
+var erikEl = document.getElementById('erik')
+var erikTooltip = new bootstrap.Tooltip(erikEl, {
+	container: 'i'
+})
