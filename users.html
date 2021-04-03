@@ -28,7 +28,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg mb-3 navbar-dark bg-dark pdh-navbar">
+  <nav class="navbar navbar-expand-lg mb-3 navbar-dark pdh-navbar">
     <div class="container-fluid">
       <a class="navbar-brand mx-3" href="pdh.html">
         <img src="images/pdh-logo.png" alt="" height="40">
@@ -36,16 +36,13 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse mx-5" id="navbarNav">
+      <div class="collapse navbar-collapse mx-3" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="https://discord.com/"><i class="fab fa-discord"></i> Discord</a>
-          </li>
-          <li class="nav-item">
+          <li class="nav-item mx-3">
             <a class="nav-link" href="wishlists.html">Wishlists</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="honds.html">Honds</a>
+          <li class="nav-item mx-3">
+            <a class="nav-link" aria-current="page" href="honds.html"></i>Honds</a>
           </li>
         </ul>
         <ul class="navbar-nav ms-auto">
@@ -53,12 +50,14 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-user-circle-o"></i>
               User Name
             </a>
-            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+            <ul class="dropdown-menu bg-black" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item text-light" href="users.html"></i>Users</a></li>
+              <li><a class="dropdown-item text-muted" href="raids.html"></i>Raids</a></li>
               <li><a class="dropdown-item text-muted" href="to-do.html">To-do</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item text-muted" href="login.html">Log out</a></li>
+              <li><a class="dropdown-item text-muted" href="login.html"><i class="fas fa-sign-out-alt"></i> Log out</a></li>
             </ul>
           </li>
         </ul>
@@ -68,6 +67,15 @@
 
   <!-- Content -->
   <div class="container text-muted">
+    <div class="row">
+      <!-- Breadcrumb -->
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="pdh.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Users</li>
+        </ol>
+      </nav>
+    </div>
     <div class="row justify-content-center">
       <div class="col">
         <h3 class="text-pdh">Users</h3>
