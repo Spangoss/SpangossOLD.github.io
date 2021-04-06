@@ -172,3 +172,15 @@
   background-color: var(--pink-dark);
   border-color: var(--pink-dark);
 }
+
+.wishlist-card {
+  flex-direction: row;
+  border: 1px solid #373b3e;
+}
+
+.wishlist-header {
+  background-color: #373b3e;
+  border-radius: calc(.25rem - 1px) 0 0 calc(.25rem - 1px) !important;
+  padding: none;
+  border: 1px solid #373b3e;
+}
