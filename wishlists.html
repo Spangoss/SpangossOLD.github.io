@@ -66,7 +66,7 @@
   </nav>
 
   <!-- Content -->
-  <div class="container text-muted px-4">
+  <div class="container text-muted px-4 pb-5">
     <div class="row">
       <!-- Breadcrumb -->
       <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
@@ -87,7 +87,7 @@
           </div>
           <div class="card-body">
             No item set
-            <span><a href="#" class="btn btn-sm btn-pdh float-end">Select Item</a></span>
+            <span><a href="#" class="btn btn-sm btn-pdh float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">Select Item</a></span>
           </div>
         </div>
 
@@ -97,7 +97,7 @@
           </div>
           <div class="card-body">
             No item set
-            <span><a href="#" class="btn btn-sm btn-pdh float-end">Select Item</a></span>
+            <span><a href="#" class="btn btn-sm btn-pdh float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">Select Item</a></span>
           </div>
         </div>
 
@@ -107,7 +107,7 @@
           </div>
           <div class="card-body">
             No item set
-            <span><a href="#" class="btn btn-sm btn-pdh float-end">Select Item</a></span>
+            <span><a href="#" class="btn btn-sm btn-pdh float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">Select Item</a></span>
           </div>
         </div>
 
@@ -117,7 +117,7 @@
           </div>
           <div class="card-body">
             No item set
-            <span><a href="#" class="btn btn-sm btn-pdh float-end">Select Item</a></span>
+            <span><a href="#" class="btn btn-sm btn-pdh float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">Select Item</a></span>
           </div>
         </div>
 
@@ -127,7 +127,7 @@
           </div>
           <div class="card-body">
             No item set
-            <span><a href="#" class="btn btn-sm btn-pdh float-end text-center">Select Item</a></span>
+            <span><a href="#" class="btn btn-sm btn-pdh float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">Select Item</a></span>
           </div>
         </div>
 
@@ -137,7 +137,7 @@
           </div>
           <div class="card-body">
             No item set
-            <span><a href="#" class="btn btn-sm btn-pdh float-end">Select Item</a></span>
+            <span><a href="#" class="btn btn-sm btn-pdh float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">Select Item</a></span>
           </div>
         </div>
 
@@ -147,151 +147,252 @@
           </div>
           <div class="card-body">
             No item set
-            <span><a href="#" class="btn btn-sm btn-pdh float-end">Select Item</a></span>
+            <span><a href="#" class="btn btn-sm btn-pdh float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">Select Item</a></span>
           </div>
         </div>
 
         <div class="card wishlist-card bg-dark my-3">
-          <div class="card-header wishlist-header text-light text-center">
+          <div class="card-header wishlist-header text-light text-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <h5>3</h5>
           </div>
           <div class="card-body">
             No item set
-            <span><a href="#" class="btn btn-sm btn-pdh float-end">Select Item</a></span>
+            <span><a href="#" class="btn btn-sm btn-pdh float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">Select Item</a></span>
           </div>
         </div>
 
         <div class="card wishlist-card bg-dark my-3">
-          <div class="card-header wishlist-header text-light text-center">
+          <div class="card-header wishlist-header text-light text-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <h5>2</h5>
           </div>
           <div class="card-body">
             No item set
-            <span><a href="#" class="btn btn-sm btn-pdh float-end">Select Item</a></span>
+            <span><a href="#" class="btn btn-sm btn-pdh float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">Select Item</a></span>
           </div>
         </div>
 
         <div class="card wishlist-card bg-dark my-3">
-          <div class="card-header wishlist-header text-light text-center">
+          <div class="card-header wishlist-header text-light text-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <h5>1</h5>
           </div>
           <div class="card-body">
             No item set
-            <span><a href="#" class="btn btn-sm btn-pdh float-end">Select Item</a></span>
+            <span><a href="#" class="btn btn-sm btn-pdh float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">Select Item</a></span>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-black">
+              <div class="modal-header text-light">
+                <h5 class="modal-title" id="exampleModalLabel">Select Item</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6 ms-auto mb-3">
+                      <div class="input-group mb-3">
+                        <input type="search" class="form-control " placeholder="Search..." aria-label="Search">
+                      </div>
+                    </div>
+                    <div class="col-md-6 ms-auto mb-3">
+                      <div class="accordion" id="accordionExample">
+                        <div class="accordion-item bg-black">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button btn-close-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">
+                              Raids
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-dark">
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-xl-6 col-lg-12">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                      <label class="form-check-label" for="flexCheckDefault">
+                                        Gruul's Lair
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                      <label class="form-check-label" for="flexCheckChecked">
+                                        Magtheridon's Lair
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                      <label class="form-check-label" for="flexCheckDefault">
+                                        Serpentshrine Cavern
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                      <label class="form-check-label" for="flexCheckChecked">
+                                        The Eye
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div class="col-xl-6 col-lg-12">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                      <label class="form-check-label" for="flexCheckDefault">
+                                        Mount Hyjal
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                      <label class="form-check-label" for="flexCheckChecked">
+                                        Black Temple
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                      <label class="form-check-label" for="flexCheckChecked">
+                                        Sunwell Plateau
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <ul class="list-group list-group">
+
+                    <li class="list-group-item d-flex bg-black border-black text-epic">
+                      <div class="d-inline-block" onclick="selectWishlistItem()">
+                        <img src="https://cdn.seventyupgrades.com/items/inv_staff_59.jpg" alt="Zhar'doom, Greatstaff of the Devourer" class="item-icon border border-dark"></img>
+                        <p class="d-inline-block wishlist-text">Zhar'doom, Greatstaff of the Devourer</p>
+                      </div>
+                      <div class="ms-auto">
+                        <a class="btn btn-sm btn-dark mx-1" href="https://tbc.wowhead.com" role="button"><i class="fa fa-external-link"></i></a>
+                      </div>
+                    </li>
+
+                    <li class="list-group-item d-flex bg-black border-black text-epic">
+                      <div class="d-inline-block" onclick="selectWishlistItem()">
+                        <img src="https://cdn.seventyupgrades.com/items/inv_jewelry_necklace_30naxxramas.jpg" alt="Ritssyn's Lost Pendant" class="item-icon border border-dark"></img>
+                        <p class="d-inline-block wishlist-text">Ritssyn's Lost Pendant</p>
+                      </div>
+                      <div class="ms-auto">
+                        <a class="btn btn-sm btn-dark mx-1" href="https://tbc.wowhead.com" role="button"><i class="fa fa-external-link"></i></a>
+                      </div>
+                    </li>
+
+                    <li class="list-group-item d-flex bg-black border-black text-epic">
+                      <div class="d-inline-block" onclick="selectWishlistItem()">
+                        <img src="https://cdn.seventyupgrades.com/items/inv_misc_bone_elfskull_01.jpg" alt="The Skull of Gul'dan" class="item-icon border border-dark"></img>
+                        <p class="d-inline-block wishlist-text">The Skull of Gul'dan</p>
+                      </div>
+                      <div class="ms-auto">
+                        <a class="btn btn-sm btn-dark mx-1" href="https://tbc.wowhead.com" role="button"><i class="fa fa-external-link"></i></a>
+                      </div>
+                    </li>
+
+                    <li class="list-group-item d-flex bg-black border-black text-epic">
+                      <div class="d-inline-block" onclick="selectWishlistItem()">
+                        <img src="https://cdn.seventyupgrades.com/items/inv_jewelry_ring_61.jpg" alt="ZBand of Al'ar" class="item-icon border border-dark"></img>
+                        <p class="d-inline-block wishlist-text">Band of Al'ar</p>
+                      </div>
+                      <div class="ms-auto">
+                        <a class="btn btn-sm btn-dark mx-1" href="https://tbc.wowhead.com" role="button"><i class="fa fa-external-link"></i></a>
+                      </div>
+                    </li>
+
+                    <li class="list-group-item d-flex bg-black border-black text-epic">
+                      <div class="d-inline-block" onclick="selectWishlistItem()">
+                        <img src="https://cdn.seventyupgrades.com/items/inv_valentineperfumebottle.jpg" alt="Essence of the Martyr" class="item-icon border border-dark"></img>
+                        <p class="d-inline-block wishlist-text">Essence of the Martyr</p>
+                      </div>
+                      <div class="ms-auto">
+                        <a class="btn btn-sm btn-dark mx-1" href="https://tbc.wowhead.com" role="button"><i class="fa fa-external-link"></i></a>
+                      </div>
+                    </li>
+
+                    <li class="list-group-item d-flex bg-black border-black text-epic">
+                      <div class="d-inline-block" onclick="selectWishlistItem()">
+                        <img src="https://cdn.seventyupgrades.com/items/inv_jewelry_necklace_32.jpg" alt="Nadina's Pendant of Purity" class="item-icon border border-dark"></img>
+                        <p class="d-inline-block wishlist-text">Nadina's Pendant of Purity</p>
+                      </div>
+                      <div class="ms-auto">
+                        <a class="btn btn-sm btn-dark mx-1" href="https://tbc.wowhead.com" role="button"><i class="fa fa-external-link"></i></a>
+                      </div>
+                    </li>
+
+                    <li class="list-group-item d-flex bg-black border-black text-epic">
+                      <div class="d-inline-block" onclick="selectWishlistItem()">
+                        <img src="https://cdn.seventyupgrades.com/items/inv_chest_cloth_02.jpg" alt="Sunfire Robe" class="item-icon border border-dark"></img>
+                        <p class="d-inline-block wishlist-text">Sunfire Robe</p>
+                      </div>
+                      <div class="ms-auto">
+                        <a class="btn btn-sm btn-dark mx-1" href="https://tbc.wowhead.com" role="button"><i class="fa fa-external-link"></i></a>
+                      </div>
+                    </li>
+
+                    <li class="list-group-item d-flex bg-black border-black text-epic">
+                      <div class="d-inline-block" onclick="selectWishlistItem()">
+                        <img src="https://cdn.seventyupgrades.com/items/inv_jewelry_ring_35.jpg" alt="Ring of Ancient Knowledge" class="item-icon border border-dark"></img>
+                        <p class="d-inline-block wishlist-text">Ring of Ancient Knowledge</p>
+                      </div>
+                      <div class="ms-auto">
+                        <a class="btn btn-sm btn-dark mx-1" href="https://tbc.wowhead.com" role="button"><i class="fa fa-external-link"></i></a>
+                      </div>
+                    </li>
+
+                    <li class="list-group-item d-flex bg-black border-black text-epic">
+                      <div class="d-inline-block" onclick="selectWishlistItem()">
+                        <img src="https://cdn.seventyupgrades.com/items/inv_misc_cape_20.jpg" alt="Tattered Cape of Antonidas" class="item-icon border border-dark"></img>
+                        <p class="d-inline-block wishlist-text">Tattered Cape of Antonidas</p>
+                      </div>
+                      <div class="ms-auto">
+                        <a class="btn btn-sm btn-dark mx-1" href="https://tbc.wowhead.com" role="button"><i class="fa fa-external-link"></i></a>
+                      </div>
+                    </li>
+
+
+                    <li class="list-group-item d-flex bg-black border-black text-epic">
+                      <div class="d-inline-block" onclick="selectWishlistItem()">
+                        <img src="https://cdn.seventyupgrades.com/items/inv_wand_25.jpg" alt="Wand of the Demonsoul" class="item-icon border border-dark"></img>
+                        <p class="d-inline-block wishlist-text">Wand of the Demonsoul</p>
+                      </div>
+                      <div class="ms-auto">
+                        <a class="btn btn-sm btn-dark mx-1" href="https://tbc.wowhead.com" role="button"><i class="fa fa-external-link"></i></a>
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-end">
+                    <li class="page-item">
+                      <a class="page-link" href="#" tabindex="-1">&laquo;</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">&raquo;</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+            </div>
           </div>
         </div>
 
 
-
-
-
-
-
-
-
-
-        <form class="my-4">
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="wishlist-item-10-input-group">10</span>
-            <select class="form-select bg-dark text-light" id="wishlist-item-10" onchange="checkValue('wishlist-item-10')" aria-label=" Default select example">
-              <option selected value="0">Select an item</option>
-              <option value="1">Hammer of the massive penis</option>
-              <option value="2">Gloves of the enquiring mind</option>
-              <option value="3">Shoes of the carved fondant</option>
-            </select>
-          </div>
-
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="wishlist-item-9-input-group">9</span>
-            <select class="form-select bg-dark text-light" id="wishlist-item-9" onchange="checkValue('wishlist-item-9')" aria-label="Default select example">
-              <option selected>Select an item</option>
-              <option value="1">Hammer of the massive penis</option>
-              <option value="2">Gloves of the enquiring mind</option>
-              <option value="3">Shoes of the carved fondant</option>
-            </select>
-          </div>
-
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="wishlist-item-8-input-group">8</span>
-            <select class="form-select bg-dark text-light" id="wishlist-item-8" onchange="checkValue('wishlist-item-8')" aria-label="Default select example">
-              <option selected>Select an item</option>
-              <option value="1">Hammer of the massive penis</option>
-              <option value="2">Gloves of the enquiring mind</option>
-              <option value="3">Shoes of the carved fondant</option>
-            </select>
-          </div>
-
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="wishlist-item-7-input-group">7</span>
-            <select class="form-select bg-dark text-light" id="wishlist-item-7" onchange="checkValue('wishlist-item-7')" aria-label="Default select example">
-              <option selected>Select an item</option>
-              <option value="1">Hammer of the massive penis</option>
-              <option value="2">Gloves of the enquiring mind</option>
-              <option value="3">Shoes of the carved fondant</option>
-            </select>
-          </div>
-
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="wishlist-item-6-input-group">6</span>
-            <select class="form-select bg-dark text-light" id="wishlist-item-6" onchange="checkValue('wishlist-item-6')" aria-label="Default select example">
-              <option selected>Select an item</option>
-              <option value="1">Hammer of the massive penis</option>
-              <option value="2">Gloves of the enquiring mind</option>
-              <option value="3">Shoes of the carved fondant</option>
-            </select>
-          </div>
-
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="wishlist-item-5-input-group">5</span>
-            <select class="form-select bg-dark text-light" id="wishlist-item-5" onchange="checkValue('wishlist-item-5')" aria-label="Default select example">
-              <option selected>Select an item</option>
-              <option value="1">Hammer of the massive penis</option>
-              <option value="2">Gloves of the enquiring mind</option>
-              <option value="3">Shoes of the carved fondant</option>
-            </select>
-          </div>
-
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="wishlist-item-4-input-group">4</span>
-            <select class="form-select bg-dark text-light" id="wishlist-item-4" onchange="checkValue('wishlist-item-4')" aria-label="Default select example">
-              <option selected>Select an item</option>
-              <option value="1">Hammer of the massive penis</option>
-              <option value="2">Gloves of the enquiring mind</option>
-              <option value="3">Shoes of the carved fondant</option>
-            </select>
-          </div>
-
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="wishlist-item-3-input-group">3</span>
-            <select class="form-select bg-dark text-light" id="wishlist-item-3" onchange="checkValue('wishlist-item-3')" aria-label="Default select example">
-              <option selected>Select an item</option>
-              <option value="1">Hammer of the massive penis</option>
-              <option value="2">Gloves of the enquiring mind</option>
-              <option value="3">Shoes of the carved fondant</option>
-            </select>
-          </div>
-
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="wishlist-item-2-input-group">2</span>
-            <select class="form-select bg-dark text-light" id="wishlist-item-2" onchange="checkValue('wishlist-item-2')" aria-label="Default select example">
-              <option selected>Select an item</option>
-              <option value="1">Hammer of the massive penis</option>
-              <option value="2">Gloves of the enquiring mind</option>
-              <option value="3">Shoes of the carved fondant</option>
-            </select>
-          </div>
-
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="wishlist-item-1-input-group">1</span>
-            <select class="form-select bg-dark text-light" id="wishlist-item-1" onchange="checkValue('wishlist-item-1')" aria-label="Default select example">
-              <option selected>Select an item</option>
-              <option value="1">Hammer of the massive penis</option>
-              <option value="2">Gloves of the enquiring mind</option>
-              <option value="3">Shoes of the carved fondant</option>
-            </select>
-          </div>
-          <button type="submit" class="btn btn-pdh float-end">Submit</button>
-        </form>
       </div>
     </div>
   </div>

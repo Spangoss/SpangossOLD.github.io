@@ -155,13 +155,6 @@
   ;
 }
 
-.input-group-text {
-  min-width: 2.5rem;
-  color: white;
-  background-color: #373b3e;
-  border-color: #373b3e;
-}
-
 .form-select:focus {
   border-color: var(--pink-dark);
   outline: 0;
@@ -185,4 +178,53 @@
   border-radius: calc(.25rem - 1px) 0 0 calc(.25rem - 1px) !important;
   padding: none;
   border: 1px solid #373b3e;
+}
+
+.accordion-button {
+  padding: 0.5rem 1.25rem;
+}
+
+.accordion-body {
+  padding: 1rem 0;
+}
+
+.modal-content {
+  border-color: #373b3e;
+}
+
+.modal-header {
+  border-color: #373b3e;
+}
+
+.modal-footer {
+  border: none;
+}
+
+.border-black {
+  border-color: #373b3e;
+}
+
+.text-epic {
+  color: purple;
+}
+
+.wishlist-text {
+  margin: 0.2rem 0 0 1rem;
+}
+
+.item-icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.list-group-item:focus, .list-group-item:hover {
+  cursor: pointer;
+  background-color: var(--pink-dark) !important;
+  color: white !important;
+}
+
+.list-group-item-action:focus, .list-group-item-action:hover {
+  cursor: pointer;
+  background-color: var(--pink-dark) !important;
+  color: white !important;
 }

@@ -11,3 +11,7 @@ function checkValue(wishlistItem) {
 		inputGroupId.classList.add("valid-wishlist-item");
 	}
 }
+
+function selectWishlistItem() {
+	alert('Hello World!')
+}
