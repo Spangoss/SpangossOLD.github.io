@@ -220,6 +220,11 @@
   margin: 0.2rem 0 0 1rem;
 }
 
+.wishlist-text-select {
+  max-width: 70%;
+  min-height: 2.2rem;
+}
+
 .item-icon {
   height: 2rem;
   width: 2rem;
@@ -234,5 +239,4 @@
 .selected-item-icon {
   height: 2.2rem;
   width: 2.2rem;
-  margin: auto;
 }
