@@ -152,7 +152,6 @@
 
 .form-select {
   border-color: #373b3e;
-  ;
 }
 
 .form-select:focus {
@@ -171,13 +170,22 @@
   border: 1px solid #373b3e;
 }
 
+.wishlist-card-selected {
+  border: 1px solid #198754;
+}
+
 .wishlist-header {
   min-width: 4rem;
-  padding: 1rem;
+  padding-top: 1.3rem;
   background-color: #373b3e;
   border-radius: calc(.25rem - 1px) 0 0 calc(.25rem - 1px) !important;
   padding: none;
   border: 1px solid #373b3e;
+}
+
+.wishlist-header-selected {
+  background-color: #198754;
+  border: 1px solid #198754;
 }
 
 .accordion-button {
@@ -201,7 +209,7 @@
 }
 
 .border-black {
-  border-color: #373b3e;
+  border-color: #373b3e !important;
 }
 
 .text-epic {
@@ -223,8 +231,7 @@
   color: white !important;
 }
 
-.list-group-item-action:focus, .list-group-item-action:hover {
-  cursor: pointer;
-  background-color: var(--pink-dark) !important;
-  color: white !important;
+.selected-item-icon {
+  height: 2.5rem;
+  width: 2.5rem;
 }
