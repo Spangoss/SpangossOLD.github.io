@@ -179,6 +179,8 @@
 }
 
 .wishlist-header {
+  min-width: 4rem;
+  padding: 1rem;
   background-color: #373b3e;
   border-radius: calc(.25rem - 1px) 0 0 calc(.25rem - 1px) !important;
   padding: none;
