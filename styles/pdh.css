@@ -222,11 +222,11 @@
 
 @media only screen and (max-width: 576px) {
   .wishlist-text {
-    max-width: 14rem;
+    max-width: 12rem;
   }
 
   .wishlist-text-select {
-    max-width: 14rem;
+    max-width: 9rem;
   }
 }
 
