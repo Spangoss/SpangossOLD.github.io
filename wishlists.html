@@ -250,12 +250,15 @@
             <div class="modal-body">
               <div class="container">
                 <div class="row">
+                  <!-- Search -->
                   <div class="col-md-6 ms-auto mb-3">
                     <div class="input-group mb-3">
                       <input type="search" class="form-control " placeholder="Search..." aria-label="Search">
                     </div>
                   </div>
+                  <!-- Raid Select -->
                   <div class="col-md-6 ms-auto mb-3">
+                    <!--
                     <div class="accordion" id="accordionExample">
                       <div class="accordion-item bg-black">
                         <h2 class="accordion-header" id="headingOne">
@@ -318,13 +321,22 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> -->
+                    <!-- Phase Select -->
+                    <select class="form-select bg-black text-light" aria-label="Select Phase">
+                      <option selected>Gruul’s lair, Magtheridon’s Lair</option>
+                      <option value="1">Serpentshrine Cavern, The Eye</option>
+                      <option value="2">Mount Hyjal, the Black Temple</option>
+                      <option value="3">Sunwell Plateau </option>
+
+
+
+                    </select>
                   </div>
                 </div>
 
 
                 <ul class="list-group list-group">
-
                   <li class="list-group-item d-flex bg-black border-black text-epic">
                     <div class="d-inline-block" onclick="selectWishlistItem()">
                       <img src="https://cdn.seventyupgrades.com/items/inv_staff_59.jpg" alt="Zhar'doom, Greatstaff of the Devourer" class="item-icon border border-dark"></img>
