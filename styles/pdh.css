@@ -218,6 +218,7 @@
 
 .wishlist-text {
   margin: 0.2rem 0 0 1rem;
+  max-width: 65%;
 }
 
 .wishlist-text-select {
