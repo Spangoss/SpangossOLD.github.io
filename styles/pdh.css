@@ -249,3 +249,11 @@
   height: 2.2rem;
   width: 2.2rem;
 }
+
+.list-group-flush:first-child .list-group-item:first-child {
+  border-top-width: 1px;
+}
+
+.list-group-flush:last-child .list-group-item:last-child {
+  border-bottom-width: 1px;
+}
