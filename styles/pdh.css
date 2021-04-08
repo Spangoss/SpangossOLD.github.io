@@ -241,6 +241,4 @@
   width: 2.2rem;
 }
 
-.wishlist-card {
-  overflow-x: auto;
-}
+.wishlist-card {}
