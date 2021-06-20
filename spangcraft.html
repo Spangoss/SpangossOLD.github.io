@@ -80,7 +80,7 @@
 
     <div class="card bg-dark" style="min-height:4rem;">
       <ul class="list-group list-group-flush">
-        <li ng-repeat="skill in tradeSkills | filter: {category: categorySelect, searchText}" class="list-group-item"><a href="https://tbc.wowhead.com/spell/{{skill.id}}" class="q4">{{skill.name}}</a></li>
+        <li ng-repeat="skill in tradeSkills | filter: {category: categorySelect, name: searchText}" class="list-group-item"><a href="https://tbc.wowhead.com/spell/{{skill.id}}" class="q4">{{skill.name}}</a></li>
       </ul>
     </div>
   </div>
