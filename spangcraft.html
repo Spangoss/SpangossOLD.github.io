@@ -68,6 +68,9 @@
     </div>
 
 
+    <label>Search: <input ng-model="searchText"></label>
+
+
     <div class="card bg-dark" style="min-height:4rem;">
       <ul class="list-group list-group-flush">
         <li ng-repeat="skill in tradeSkills" class="list-group-item"><a href="https://tbc.wowhead.com/spell/{{skill.id}}" class="q4">{{skill.name}}</a></li>
@@ -76,7 +79,9 @@
   </div>
 
 
-  <p ng-repeat="item in skillsArray" class="text-danger">{{item.name}} {{item.id}} {{item.category}}</p>
+
+
+
 
   <!-- Footer -->
   <footer class="footer">
