@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="tradeSkills" ng-controller="c" ng-init="ctrl.init()">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset=" UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Spangoss</title>
@@ -12,14 +12,20 @@
 
   <!-- Custom CSS -->
   <link href="styles/custom.css" rel="stylesheet">
-
-  <!-- Fonts -->
+  <link href="styles/pdh.css" rel="stylesheet">
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="16x16" href="pfavicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#8E8E93">
+  <meta name="msapplication-TileColor" content="#001100">
+  <meta name="theme-color" content="#000000">
+
+  <!-- Angular JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="scripts/trade-skills.js"></script>
 
 </head>
 
@@ -60,39 +66,49 @@
         <h3 class="text-light">Import Data</h3>
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-          <textarea class="form-control" id="tradeSkillsTextArea" rows="3"></textarea>
+          <textarea class="form-control" id="tradeSkillsTextArea" ng-model="tradeSkillInput" rows="3"></textarea>
         </div>
-        <button class="btn btn-primary float-end mt-3" onclick="convertTradeSkills(tradeSkillsTextArea)">Submit</button>
+        <button class="btn btn-primary float-end" onclick="convertTradeSkills(tradeSkillsTextArea)">Submit</button>
       </div>
     </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p class="text-muted text-center"><small><i class="fa fa-code"></i> Code by Spangoss ©2021</small></p>
+    <div class="row mt-3">
+      <p class="text-light">{{tradeSkillInput}}</p>
     </div>
-  </footer>
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <ul class="list-group list-group-flush">
+            <li ng-repeat="skill in tradeSkills" class="list-group-item"><a href="https://tbc.wowhead.com/spell/{{skill.id}}" class="q4">{{skill.name}}</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <p class="text-muted text-center"><small><i class="fa fa-code"></i> Code by Spangoss ©2021</small></p>
+        </div>
+      </footer>
 
 
-  <!-- Bootstrap javascript. Load after page for performance -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+      <!-- Bootstrap javascript. Load after page for performance -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
-  <!-- Font Awesome Icons. Load after page for performance -->
-  <script src="https://kit.fontawesome.com/7d48f70d81.js" crossorigin="anonymous"></script>
+      <!-- Font Awesome Icons. Load after page for performance -->
+      <script src="https://kit.fontawesome.com/7d48f70d81.js" crossorigin="anonymous"></script>
 
-  <!--Wowhead Popups -->
-  <script>
-    const whTooltips = {
-      colorLinks: true,
-      iconizeLinks: false,
-      renameLinks: true
-    };
-  </script>
-  <script src="https://wow.zamimg.com/widgets/power.js"></script>
+      <!--Wowhead Popups -->
+      <script>
+        const whTooltips = {
+          colorLinks: true,
+          iconizeLinks: false,
+          renameLinks: true
+        };
+      </script>
+      <script src="https://wow.zamimg.com/widgets/power.js"></script>
 
-  <!-- Convert Tradeskills -->
-  <script src="scripts/convert-trade-skills.js"></script>
+      <!-- Convert Tradeskills -->
+      <script src="scripts/convert-trade-skills.js"></script>
 
 </body>
 
