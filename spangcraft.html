@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="tradeSkills" ng-controller="c" ng-init="ctrl.init()">
+<html lang="en" ng-app="tradeSkills" ng-controller="tradeSkillsCntrl">
 
 <head>
   <meta charset=" UTF-8">
@@ -61,18 +61,15 @@
 
   <div class="container">
 
-    <div class="row">
+    <div class="row my-3">
       <div class="col">
         <h3 class="text-light">Import Data</h3>
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-          <textarea class="form-control" id="tradeSkillsTextArea" ng-model="tradeSkillInput" rows="3"></textarea>
+          <textarea class="form-control" id="tradeSkillsTextArea" ng-model="tradeSkillsInput" rows="6"></textarea>
         </div>
-        <button class="btn btn-primary float-end" onclick="convertTradeSkills(tradeSkillsTextArea)">Submit</button>
+        <button class="btn btn-primary float-end" ng-click="convertTradeSkills()">Submit</button>
       </div>
-    </div>
-    <div class="row mt-3">
-      <p class="text-light">{{tradeSkillInput}}</p>
     </div>
     <div class="row">
       <div class="col">
@@ -82,6 +79,15 @@
           </ul>
         </div>
       </div>
+
+      <div class="mb-3">
+        <label for="tradeSkillsInput" class="form-label">Trade Skills Input</label>
+        <textarea ng-model="c.data.tradeSkillsInput" class="form-control" id="tradeSkillsInput" rows="6"></textarea>
+        <button ng-click="submitSkills()" class="btn btn-primary">Submit</button>
+      </div>
+
+
+      <p ng-repeat="item in c.data.skillsArray" class="text-danger">{{item.name}} {{item.id}} {{item.category}}</p>
 
       <!-- Footer -->
       <footer class="footer">
