@@ -61,52 +61,49 @@
 
   <div class="container">
 
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <ul class="list-group list-group-flush">
-            <li ng-repeat="skill in tradeSkills" class="list-group-item"><a href="https://tbc.wowhead.com/spell/{{skill.id}}" class="q4">{{skill.name}}</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="mb-3">
-        <label for="tradeSkillsInput" class="form-label">Trade Skills Input</label>
-        <textarea ng-model="tradeSkillsInput" class="form-control" id="tradeSkillsInput" rows="6"></textarea>
-        <button ng-click="submitSkills()" class="btn btn-primary">Submit</button>
-      </div>
-
-      <p class="text-warning">{{skillsArray}}</p>
+    <div class="mb-3">
+      <label for="tradeSkillsInput" class="form-label">Trade Skills Input</label>
+      <textarea ng-model="tradeSkillsInput" class="form-control" id="tradeSkillsInput" rows="6"></textarea>
+      <button ng-click="submitSkills()" class="btn btn-primary">Submit</button>
+    </div>
 
 
-      <p ng-repeat="item in skillsArray" class="text-danger">{{item.name}} {{item.id}} {{item.category}}</p>
-
-      <!-- Footer -->
-      <footer class="footer">
-        <div class="container">
-          <p class="text-muted text-center"><small><i class="fa fa-code"></i> Code by Spangoss ©2021</small></p>
-        </div>
-      </footer>
+    <div class="card bg-dark" style="min-height:4rem;">
+      <ul class="list-group list-group-flush">
+        <li ng-repeat="skill in tradeSkills" class="list-group-item"><a href="https://tbc.wowhead.com/spell/{{skill.id}}" class="q4">{{skill.name}}</a></li>
+      </ul>
+    </div>
+  </div>
 
 
-      <!-- Bootstrap javascript. Load after page for performance -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <p ng-repeat="item in skillsArray" class="text-danger">{{item.name}} {{item.id}} {{item.category}}</p>
 
-      <!-- Font Awesome Icons. Load after page for performance -->
-      <script src="https://kit.fontawesome.com/7d48f70d81.js" crossorigin="anonymous"></script>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted text-center"><small><i class="fa fa-code"></i> Code by Spangoss ©2021</small></p>
+    </div>
+  </footer>
 
-      <!--Wowhead Popups -->
-      <script>
-        const whTooltips = {
-          colorLinks: true,
-          iconizeLinks: false,
-          renameLinks: true
-        };
-      </script>
-      <script src="https://wow.zamimg.com/widgets/power.js"></script>
 
-      <!-- Convert Tradeskills -->
-      <script src="scripts/convert-trade-skills.js"></script>
+  <!-- Bootstrap javascript. Load after page for performance -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  <!-- Font Awesome Icons. Load after page for performance -->
+  <script src="https://kit.fontawesome.com/7d48f70d81.js" crossorigin="anonymous"></script>
+
+  <!--Wowhead Popups -->
+  <script>
+    const whTooltips = {
+      colorLinks: true,
+      iconizeLinks: false,
+      renameLinks: true
+    };
+  </script>
+  <script src="https://wow.zamimg.com/widgets/power.js"></script>
+
+  <!-- Convert Tradeskills -->
+  <script src="scripts/convert-trade-skills.js"></script>
 
 </body>
 
