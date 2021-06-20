@@ -1,12 +1,10 @@
 var app = angular.module('tradeSkills', []);
 app.controller('tradeSkillsCntrl', function ($scope) {
 
-
 	$scope.submitSkills = function () {
 		alert('Hello');
 		var inputArray = $scope.tradeSkillsInput.split('\n');
 		$scope.data.skillsArray = [];
-
 		for (var i = 0; i < inputArray.length; i++) {
 			var skill = {
 				name: inputArray[i].substr(0, inputArray[i].indexOf('(')),
