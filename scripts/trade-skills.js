@@ -2,7 +2,7 @@ var app = angular.module('tradeSkills', []);
 app.controller('tradeSkillsCntrl', function ($scope) {
 
 	$scope.submitSkills = function () {
-		alert('Hello');
+		alert($scope.tradeSkillsInput);
 		var inputArray = $scope.tradeSkillsInput.split('\n');
 		$scope.data.skillsArray = [];
 		for (var i = 0; i < inputArray.length; i++) {

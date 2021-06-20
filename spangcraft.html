@@ -61,16 +61,6 @@
 
   <div class="container">
 
-    <div class="row my-3">
-      <div class="col">
-        <h3 class="text-light">Import Data</h3>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-          <textarea class="form-control" id="tradeSkillsTextArea" ng-model="tradeSkillsInput" rows="6"></textarea>
-        </div>
-        <button class="btn btn-primary float-end" ng-click="convertTradeSkills()">Submit</button>
-      </div>
-    </div>
     <div class="row">
       <div class="col">
         <div class="card">
@@ -82,12 +72,12 @@
 
       <div class="mb-3">
         <label for="tradeSkillsInput" class="form-label">Trade Skills Input</label>
-        <textarea ng-model="c.data.tradeSkillsInput" class="form-control" id="tradeSkillsInput" rows="6"></textarea>
+        <textarea ng-model="tradeSkillsInput" class="form-control" id="tradeSkillsInput" rows="6"></textarea>
         <button ng-click="submitSkills()" class="btn btn-primary">Submit</button>
       </div>
 
 
-      <p ng-repeat="item in c.data.skillsArray" class="text-danger">{{item.name}} {{item.id}} {{item.category}}</p>
+      <p ng-repeat="item in skillsArray" class="text-danger">{{item.name}} {{item.id}} {{item.category}}</p>
 
       <!-- Footer -->
       <footer class="footer">
