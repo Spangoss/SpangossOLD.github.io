@@ -70,10 +70,17 @@
 
     <label>Search: <input ng-model="searchText"></label>
 
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="Enchant Chest">Enchant Chest</option>
+    </select>
+
 
     <div class="card bg-dark" style="min-height:4rem;">
       <ul class="list-group list-group-flush">
-        <li ng-repeat="skill in tradeSkills | filter:searchText " class="list-group-item"><a href="https://tbc.wowhead.com/spell/{{skill.id}}" class="q4">{{skill.name}}</a></li>
+        <li ng-repeat="skill in tradeSkills | filter: {category: searchText}" class="list-group-item"><a href="https://tbc.wowhead.com/spell/{{skill.id}}" class="q4">{{skill.name}}</a></li>
       </ul>
     </div>
   </div>
