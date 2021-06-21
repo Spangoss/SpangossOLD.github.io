@@ -25,7 +25,7 @@ app.controller('tradeSkillsCntrl', function ($scope) {
 		$scope.categoriesArray = JSON.stringify($scope.categories);
 	}
 
-	$scope.categoriesStored = [];
+	$scope.categoriesStored = ["Enchant Ring ", "Enchant Bracer ", "Enchant Gloves ", "Miscelaneous", "Enchant Chest ", "Enchant Weapon ", "Enchant 2H Weapon ", "Enchant Boots ", "Enchant Cloak ", "Enchant Shield "];
 	$scope.tradeskillsStored = [{
 		"name": "Enchant Ring - Healing Power",
 		"id": "27926",
