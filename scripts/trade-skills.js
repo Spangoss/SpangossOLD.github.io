@@ -4,6 +4,7 @@ app.controller('tradeSkillsCntrl', function ($scope) {
 	$scope.submitSkills = function () {
 		var inputArray = $scope.tradeSkillsInput.split('\n');
 		$scope.tradeSkills = [];
+		var categories = [];
 		for (var i = 0; i < inputArray.length; i++) {
 			var category = inputArray[i].substr(0, inputArray[i].indexOf('-'));
 			if (category == '') {
@@ -15,8 +16,10 @@ app.controller('tradeSkillsCntrl', function ($scope) {
 				category: category
 			};
 			$scope.tradeSkills.push(skill);
+			$scope.categories.push(skill.category);
 		}
-		console.log($scope.tradeSkills);
+
+		$scope.categories = [...new Set(categories)];
 	}
 
 });
