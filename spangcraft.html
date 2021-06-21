@@ -60,11 +60,19 @@
   </nav>
 
   <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="text-pdh">Spangcraft</h2>
+        <p class="text-muted">Here are some recipes that I can make in World of Warcraft Classic: The Burning Crusade</p>
+      </div>
+    </div>
+
 
 
 
     <!-- Search and Category Controls -->
     <div class="row">
+      <h4 class="text-light">Enchanting</h4>
       <div class="col-6">
         <div class="mb-3">
           <input class="form-control" id="searchText" placeholder="Search..." ng-model="searchText">
@@ -87,31 +95,31 @@
 
     <div class="row">
       <div class="col">
-        <div class="card bg-dark" style="min-height:4rem;">
+        <div class="card bg-dark">
           <ul class="list-group list-group-flush bg-dark">
             <li ng-repeat="skill in tradeskillsStored | filter: {category: categorySelect, name: searchText}" class="list-group-item bg-dark"><a href="https://tbc.wowhead.com/spell/{{skill.id}}" class="q4">{{skill.name}}</a></li>
           </ul>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Stored Results -->
 
 
-  <p class="text-warning">{{tradeSkillsArray}}</p>
+    <!-- Stored Results -->
 
 
-  <!-- Input Box -->
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <label for="tradeSkillsInput" class="form-label text-muted">Trade Skills Input</label>
-        <textarea ng-model="tradeSkillsInput" class="form-control" id="tradeSkillsInput" rows="6"></textarea>
-        <button ng-click="submitSkills()" class="btn btn-primary my-3">Submit</button>
+    <p class="text-warning">{{tradeSkillsArray}}</p>
+
+
+    <!-- Input Box -->
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <label for="tradeSkillsInput" class="form-label text-muted">Trade Skills Input</label>
+          <textarea ng-model="tradeSkillsInput" class="form-control" id="tradeSkillsInput" rows="6"></textarea>
+          <button ng-click="submitSkills()" class="btn btn-primary my-3">Submit</button>
+        </div>
       </div>
     </div>
-  </div>
 
   </div>
 
