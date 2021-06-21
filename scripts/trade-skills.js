@@ -16,9 +16,7 @@ app.controller('tradeSkillsCntrl', function ($scope) {
 			};
 			$scope.tradeSkills.push(skill);
 		}
-
-		$scope.JSONskills = JSON.stringify($scope.tradeSkills);
-		alert($scope.JSONskills);
+		console.log($scope.tradeSkills);
 	}
 
 });
