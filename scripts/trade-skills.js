@@ -16,7 +16,7 @@ app.controller('tradeSkillsCntrl', function ($scope) {
 				category: category
 			};
 			$scope.tradeSkills.push(skill);
-			$scope.categories.push(skill.category);
+			categories.push(skill.category);
 		}
 
 		$scope.categories = [...new Set(categories)];
