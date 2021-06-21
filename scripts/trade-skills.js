@@ -20,6 +20,8 @@ app.controller('tradeSkillsCntrl', function ($scope) {
 		}
 
 		$scope.categories = [...new Set(categories)];
+
+		$scope.tradeSkillsArray = JSON.stringify($scope.tradeSkills);
 	}
 
 });
