@@ -71,7 +71,7 @@
     <label>Search: <input ng-model="searchText"></label>
 
     <select ng-model="categorySelect" class="form-select" aria-label="Default select example">
-      <option selected>Open this select menu</option>
+      <option selected value="{{$scope.categories}}">Open this select menu</option>
       <option ng-repeat="cat in categories" value="{{cat}}">{{cat}}</option>
     </select>
 
