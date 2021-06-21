@@ -61,21 +61,33 @@
 
   <div class="container">
 
-    <div class="mb-3">
-      <label for="tradeSkillsInput" class="form-label">Trade Skills Input</label>
-      <textarea ng-model="tradeSkillsInput" class="form-control" id="tradeSkillsInput" rows="6"></textarea>
-      <button ng-click="submitSkills()" class="btn btn-primary">Submit</button>
+    <!-- Input Box -->
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <label for="tradeSkillsInput" class="form-label text-muted">Trade Skills Input</label>
+          <textarea ng-model="tradeSkillsInput" class="form-control" id="tradeSkillsInput" rows="6"></textarea>
+          <button ng-click="submitSkills()" class="btn btn-primary my-3">Submit</button>
+        </div>
+      </div>
     </div>
 
+    <!-- Search and Category Controls -->
+    <div class="row">
+      <div class="col-6">
+        <div class="mb-3">
+          <input class="form-control" id="searchText" placeholder="Search..." ng-model="searchText">
+        </div>
+      </div>
+      <div class="col-6">
+        <select ng-model="categorySelect" class="form-select" aria-label="Default select example">
+          <option selected value="{{$scope.categories}}">Select Category</option>
+          <option ng-repeat="cat in categories" value="{{cat}}">{{cat}}</option>
+        </select>
+      </div>
+    </div>
 
-    <label>Search: <input ng-model="searchText"></label>
-
-    <select ng-model="categorySelect" class="form-select" aria-label="Default select example">
-      <option selected value="{{$scope.categories}}">Open this select menu</option>
-      <option ng-repeat="cat in categories" value="{{cat}}">{{cat}}</option>
-    </select>
-
-
+    <!-- Results -->
     <div class="card bg-dark" style="min-height:4rem;">
       <ul class="list-group list-group-flush bg-dark">
         <li ng-repeat="skill in tradeSkills | filter: {category: categorySelect, name: searchText}" class="list-group-item bg-dark"><a href="https://tbc.wowhead.com/spell/{{skill.id}}" class="q4">{{skill.name}}</a></li>
