@@ -22,9 +22,10 @@ app.controller('tradeSkillsCntrl', function ($scope) {
 		$scope.categories = [...new Set(categories)];
 
 		$scope.tradeSkillsArray = JSON.stringify($scope.tradeSkills);
+		$scope.categoriesArray = JSON.stringify($scope.categories);
 	}
 
-
+	$scope.categoriesStored = [];
 	$scope.tradeskillsStored = [{
 		"name": "Enchant Ring - Healing Power",
 		"id": "27926",
