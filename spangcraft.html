@@ -34,8 +34,8 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-nav">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="images/logo.png" alt="" height="22">
+      <a class="navbar-brand" href="spangcraft.html">
+        <img src="images/spangcraft.svg" height="30">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -43,16 +43,10 @@
       <div class="collapse navbar-collapse justify-content-end mx-5" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+            <a class="nav-link" href="enchanting.html">Enchanting</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="things.html">Things</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="stuff.html">Stuff</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="erik.html">Erik</a>
+            <a class="nav-link" href="tailoring.html">Tailoring</a>
           </li>
         </ul>
       </div>
@@ -68,47 +62,42 @@
     </div>
 
 
-
-
-    <!-- Search and Category Controls -->
     <div class="row">
-      <h4 class="text-light">Enchanting</h4>
-      <div class="col-6">
-        <div class="mb-3">
-          <input class="form-control" id="searchText" placeholder="Search..." ng-model="searchText">
-        </div>
-      </div>
-      <div class="col-6">
-        <select ng-model="categorySelect" class="form-select" aria-label="Default select example">
-          <option selected value="{{$scope.categoriesStored}}">Select Category</option>
-          <option ng-repeat="cat in categoriesStored" value="{{cat}}">{{cat}}</option>
-        </select>
+      <div class="col mb-3">
+        <a class="btn btn-pdh" data-bs-toggle="collapse" href="#collapseEnchanting" role="button" aria-expanded="false" aria-controls="collapseEnchanting">Enchanting</a>
+        <a class="btn btn-pdh mx-3" data-bs-toggle="collapse" href="#collapseTailoring" role="button" aria-expanded="false" aria-controls="collapseEnchanting">Tailoring</a>
       </div>
     </div>
 
-    <!-- Results -->
-    <!-- <div class="card bg-dark" style="min-height:4rem;">
-      <ul class="list-group list-group-flush bg-dark">
-        <li ng-repeat="skill in tradeSkills | filter: {category: categorySelect, name: searchText}" class="list-group-item bg-dark"><a href="https://tbc.wowhead.com/spell/{{skill.id}}" class="q4">{{skill.name}}</a></li>
+
+
+    <div class="card bg-dark-glass collapse" id="collapseEnchanting">
+      <div class="card-body">
+        <!-- Search and Category Controls -->
+        <div class="row">
+          <div class="col-6">
+            <input class="form-control" id="searchText" placeholder="Search..." ng-model="searchText">
+          </div>
+          <div class="col-6">
+            <select ng-model="categorySelect" class="form-select bg-dark-glass text-muted" aria-label="Default select example">
+              <option selected value="{{$scope.categoriesStored}}">Select Category</option>
+              <option ng-repeat="cat in categoriesStored" value="{{cat}}">{{cat}}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <!-- Results -->
+      <ul class="list-group list-group-flush">
+        <li ng-repeat="skill in tradeskillsStored | filter: {category: categorySelect, name: searchText}" class="list-group-item bg-dark-glass"><a href="https://tbc.wowhead.com/spell/{{skill.id}}" class="q4">{{skill.name}}</a>
+        </li>
       </ul>
-    </div>-->
-
-    <div class="row">
-      <div class="col">
-        <div class="card bg-dark">
-          <ul class="list-group list-group-flush bg-dark">
-            <li ng-repeat="skill in tradeskillsStored | filter: {category: categorySelect, name: searchText}" class="list-group-item bg-dark"><a href="https://tbc.wowhead.com/spell/{{skill.id}}" class="q4">{{skill.name}}</a></li>
-          </ul>
-        </div>
-      </div>
     </div>
 
 
-    <!-- Stored Results -->
 
 
-    <p class="text-warning">{{tradeSkillsArray}}</p>
-    <p class="text-warning">{{categoriesArray}}</p>
+
+
 
 
 

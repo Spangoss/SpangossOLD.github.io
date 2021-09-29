@@ -245,6 +245,10 @@
   color: white !important;
 }
 
+.list-group-item:focus, .list-group-item:hover a {
+  color: white !important;
+}
+
 .selected-item-icon {
   height: 2.2rem;
   width: 2.2rem;
@@ -256,4 +260,18 @@
 
 .list-group-flush:last-child .list-group-item:last-child {
   border-bottom-width: 1px;
+}
+
+.bg-dark-glass {
+  background-color: rgba(10, 11, 13, .9) !important;
+}
+
+/* Cards */
+.card .list-group-item {
+  border: 1px solid rgba(108, 117, 125, .125) !important;
+}
+
+.form-control:focus {
+  border-color: var(--pink) !important;
+  box-shadow: 0 0 0 .25rem rgba(191, 29, 144, .5);
 }
