@@ -5,75 +5,128 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Spangoss</title>
+  <title>Plunder de Hond</title>
 
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link href="styles/custom.css" rel="stylesheet">
-
-  <!-- Fonts -->
+  <link href="styles/pdh.css" rel="stylesheet">
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="pdh-favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="pdh-favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="pdh-favicon/favicon-16x16.png">
+  <link rel="manifest" href="pdh-favicon/site.webmanifest">
+  <link rel="mask-icon" href="pdh-favicon/safari-pinned-tab.svg" color="#8E8E93">
+  <meta name="msapplication-TileColor" content="#001100">
+  <meta name="theme-color" content="#000000">
 
 </head>
 
-<body class="cover-page">
+<body class="home-page-img">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-nav">
+  <nav class="navbar navbar-expand-lg mb-3 navbar-dark pdh-navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="images/logo.png" alt="" height="22">
+      <a class="navbar-brand mx-3" href="index.html">
+        <img src="images/pdh-logo.png" alt="" height="40">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end mx-5" id="navbarNav">
+      <div class="collapse navbar-collapse mx-3" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="wishlists.html">Wishlists</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="things.html">Things</a>
+          <li class="nav-item mx-3">
+            <a class="nav-link" aria-current="page" href="honds.html"></i>Honds</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="stuff.html">Stuff</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="erik.html">Erik</a>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-user-circle-o"></i>
+              User Name
+            </a>
+            <ul class="dropdown-menu bg-black" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item text-muted" href="users.html"></i>Users</a></li>
+              <li><a class="dropdown-item text-muted" href="raids.html"></i>Raids</a></li>
+              <li><a class="dropdown-item text-muted" href="to-do.html">To-do</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item text-muted" href="login.html"><i class="fas fa-sign-out-alt"></i> Log out</a></li>
+            </ul>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container my-5">
-    <div class="row text-center py-5">
-      <h1 class="display-5 text-light"><i class="fa fa-exclamation-triangle text-warning"></i> Construct Additional Pylons...</h1>
-      <p class="text-muted">Soon... there may be stuff...</p>
+  <!-- Content -->
+  <div class="container text-muted px-4">
+    <div class="row mt-5 py-3">
+      <div class="col-lg-6 col-xs-12">
+        <h1 class="display-3 text-light">Welcome back, <span class="text-pdh welcome-name">Spangoss!</span></h1>
+        <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. </p>
+      </div>
     </div>
-
   </div>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p class="text-light text-center"><small><i class="fa fa-code"></i> Code by Spangoss ©2021</small></p>
+  <!-- Actions -->
+  <div class="container text-muted px-4">
+    <div class="row mt-5 py-3">
+      <div class="col-lg-4 col-xs-12">
+        <div class="card bg-black mb-4">
+          <div class="card-body">
+            <h5 class="card-title  text-light">My Wishlists</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="wishlists.html" class="btn btn-block btn-pdh"><i class="fa fa-list"></i> Manage my Wishlists</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-xs-12">
+        <div class="card bg-black mb-4">
+          <div class="card-body">
+            <h5 class="card-title text-light">Meet the Honds</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="honds.html" class="btn btn-block btn-pdh"><i class="fa fa-dog"></i> I like dags</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <div class="card bg-black mb-4">
+          <div class="card-body">
+            <h5 class="card-title text-light">Send Steven Money</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="https://paypal.com" class="btn btn-block btn-pdh"><i class="fab fa-paypal"></i> Good job, Steven</a>
+          </div>
+        </div>
+      </div>
     </div>
-  </footer>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <p class="text-muted text-center"><small><i class="fa fa-code"></i> Code by Spangoss ©2021</small><a href="https://discord.com/" class="social-link float-end mx-5"><i class="fab fa-discord fa-2x"></i></a></p>
+      </div>
+    </footer>
 
 
-  <!-- Bootstrap javascript. Load after page for performance -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!-- Bootstrap javascript. Load after page for performance -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
-  <!-- Font Awesome Icons. Load after page for performance -->
-  <script src="https://kit.fontawesome.com/7d48f70d81.js" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome Icons. Load after page for performance -->
+    <script src="https://kit.fontawesome.com/7d48f70d81.js" crossorigin="anonymous"></script>
 
 </body>
 
